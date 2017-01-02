@@ -186,6 +186,28 @@ and the administrator will contact you if we need any extra information.</h4>
   information.
 </p>
 
+<!--
+  ETHERPAD
+
+  At `_misc/etherpad.txt` you will find a template for the etherpad.
+
+  Display the Etherpad for the workshop.  You can set this up in
+  advance or on the first day; either way, make sure you push changes
+  to GitHub after you have its URL.  To create an Etherpad, go to
+
+      http://pad.software-carpentry.org/YYYY-MM-DD-site
+
+  where 'YYYY-MM-DD-site' is the identifier for your workshop,
+  e.g., '2015-06-10-esu'.
+-->
+{% if page.etherpad %}
+<p id="etherpad">
+  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+  <br/>
+  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
+</p>
+{% endif %}
+
 <hr/>
 
 <!--
@@ -210,7 +232,7 @@ and the administrator will contact you if we need any extra information.</h4>
      <tr> <td>09:00</td> <td> Arrival and Welcome</td> </tr>
      <tr> <td>09:30</td> <td> Using the shell to do more in less time</td> </tr>
      <tr> <td>10:30</td> <td> <em>Break</em></td> </tr>
-     <tr> <td>10:45</td> <td> </td>Python and good programming practice (1) </tr>
+     <tr> <td>10:45</td> <td> Python and good programming practice (1)</td> </tr>
      <tr> <td>12:30</td> <td> <em>Lunch (provided)</em></td> </tr>
      <tr> <td>13:30</td> <td> Using version control to manage information</td> </tr>
      <tr> <td>15:00</td> <td> <em>Break</em></td> </tr>
@@ -226,7 +248,7 @@ and the administrator will contact you if we need any extra information.</h4>
      <tr> <td>10:45</td> <td> <em>Break</em></td> </tr>
      <tr> <td>11:00</td> <td> Testing and Continuous Integration with Python (1)</td> </tr>
      <tr> <td>12:30</td> <td> <em>Lunch</em></td> </tr>
-     <tr> <td>13:30</td> <td> </td>Python and the command line</tr>
+     <tr> <td>13:30</td> <td> Python and the command line</td></tr>
      <tr> <td>15:00</td> <td> <em>Break</em></td> </tr>
      <tr> <td>15:15</td> <td> Testing and Continuous Integration with Python (2)</td> </tr>
      <tr> <td>16:15</td> <td> Preperation for day 3</td> </tr>
@@ -241,27 +263,7 @@ and the administrator will contact you if we need any extra information.</h4>
   </div>
 </div>
 
-<!--
-  ETHERPAD
 
-  At `_misc/etherpad.txt` you will find a template for the etherpad.
-
-  Display the Etherpad for the workshop.  You can set this up in
-  advance or on the first day; either way, make sure you push changes
-  to GitHub after you have its URL.  To create an Etherpad, go to
-
-      http://pad.software-carpentry.org/YYYY-MM-DD-site
-
-  where 'YYYY-MM-DD-site' is the identifier for your workshop,
-  e.g., '2015-06-10-esu'.
--->
-{% if page.etherpad %}
-<p id="etherpad">
-  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
-  <br/>
-  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
-</p>
-{% endif %}
 
 <hr/>
 
@@ -711,7 +713,7 @@ survay <a href='https://www.surveymonkey.com/r/swc_pre_workshop_v1?workshop_id=2
 
 
 <!-- Make the next bit accessable before the start of day 1 -->
-<!--
+
 
 <hr/>
   <h2>During and after the workshop</h2>
@@ -726,7 +728,7 @@ survay <a href='https://www.surveymonkey.com/r/swc_pre_workshop_v1?workshop_id=2
       during the workshop. Please use this to keep collaborative notes and ask 
       (and answer) each others questions. Feel free to tweet from the workshop using 
       <a href='https://twitter.com/search?f=realtime&q=%23SWCLeeds'>#SWCLeeds</a>.</p>
--->
+  
 <!-- MORE STUFF -->
 <!-- 
   <h3>Workshop material</h3>
